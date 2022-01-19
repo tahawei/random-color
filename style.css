@@ -12,15 +12,25 @@ body {
   font-family: sans-serif;
 }
 .copy {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 15px;
-  height: 10px 20px;
-  margin: 20px;
+
+  margin: 5px 10px;
   border: 2px solid #fff;
   transition: 0.5s ease;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
 }
 .copy:hover {
+  background-color: #fff;
+  color: #000;
   transform: scale(1.1);
+}
+.copy:focus {
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+  background-color: #0a58ca;
 }
 
 .alert {

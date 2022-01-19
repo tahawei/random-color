@@ -12,7 +12,7 @@ document.body.prepend(colorHtmTag);
 colorHtmTag.classList.add("color-hex");
 
 let copyBtn = document.querySelector(".copy");
-copyBtn.style.backgroundColor = `#${colorParts.join("")}`;
+// copyBtn.style.backgroundColor = `#${colorParts.join("")}`;
 
 document.body.style.backgroundColor = `#${colorParts.join("")}`;
 
@@ -26,7 +26,7 @@ copyBtn.addEventListener("click", () => {
   inputElement.value = `#${colorParts.join("")}`;
   document.body.appendChild(inputElement);
   inputElement.select();
-  document.execCommand("copy");
+  // document.execCommand("copy");
   document.body.removeChild(inputElement);
   // add class display block
   alertText.classList.add("db");
