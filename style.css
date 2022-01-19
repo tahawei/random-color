@@ -1,0 +1,54 @@
+@font-face {
+  font-family: DigitalNumbers-Regular;
+  src: url(files/DigitalNumbers-Regular.ttf);
+}
+
+.color-hex {
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.copy {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  height: 10px 20px;
+  margin: 20px;
+  border: 2px solid #fff;
+  transition: 0.5s ease;
+}
+.copy:hover {
+  transform: scale(1.1);
+}
+
+.alert {
+  width: 80%;
+  position: absolute;
+
+  background-color: #fff;
+  bottom: 10%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+  border-radius: 40px;
+  transform: translateY(2000);
+  display: none;
+}
+.alert.db {
+  display: flex;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(2000);
+    display: none;
+  }
+  100% {
+    transform: translateY(0);
+    display: flex;
+  }
+}
