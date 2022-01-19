@@ -28,8 +28,8 @@ copyBtn.addEventListener("click", () => {
   inputElement.select();
   document.execCommand("copy");
   document.body.removeChild(inputElement);
+  // add class display block
   alertText.classList.add("db");
-  alertText.style.transition = "0.5s ease";
 
   setTimeout(() => {
     alertText.classList.remove("db");
