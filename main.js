@@ -26,7 +26,7 @@ copyBtn.addEventListener("click", () => {
   inputElement.value = `#${colorParts.join("")}`;
   document.body.appendChild(inputElement);
   inputElement.select();
-  // document.execCommand("copy");
+  document.execCommand("copy");
   document.body.removeChild(inputElement);
   // add class display block
   alertText.classList.add("db");
