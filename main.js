@@ -4,6 +4,7 @@ let colorParts = [];
 for (let i = 0; i < 6; i++) {
   colorParts.push(hexArray[Math.floor(Math.random() * hexArray.length)]);
 }
+
 let colorHtmTag = document.createElement("h1");
 let colorHexText = document.createTextNode(`#${colorParts.join("")}`);
 colorHtmTag.append(colorHexText);
